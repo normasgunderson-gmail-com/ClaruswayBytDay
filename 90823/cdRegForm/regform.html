@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label {
+      display: inline-block;
+      border: 2.5px;
+      width: 100px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <form action="result.htm" method="GET">
+    <h1>Registration Form</h1>
+    <hr>
+    <div class="nameinform">
+      <label for="fname">First Name: </label>
+      <input type="text" fname="fname" id="fname" placeholder="user first name" required>
+    </div>
+    <div class="lnameinform">
+      <label for="lname">Last Name: </label>
+      <input type="text" name="lname" id="lname" placeholder="user last name" required>
+    </div>
+    <div class="email">
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" name="Password" required>
+      <br>
+    </div>
+    <br>
+    <form>
+      <label for="date">Birth Date: </label>
+      <input type="date" name="date" id="date" min="1900-01-01" value="2023-9-12">
+    </form>
+    <div>
+      Gender
+    </div>
+    <div>
+      <label for="male">Male</label>
+      <input checked type="radio" name="gender" id="male" value="male">
+    </div>
+    <div>
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female">
+    </div>\<br>
+    <div>
+      <label for="cellphone">Cell Ph. Num.</label>
+      <input type="tel" name="cellphone" id="cellphone" required>
+    </div>
+    <br>
+    <div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+
+  </form>
+</body>
+
+</html>
